@@ -11,7 +11,7 @@
 .flex {
     display: flex;
     align-items: baseline;
-    padding-top: 1rem;
+    padding: 1rem 0 0.4rem 0;
     li:nth-child(1){
         font-size: 1.5rem;
     }
@@ -22,6 +22,7 @@
         padding-left: 0.3rem;
     }
     time {
+        font-size: 1rem;
         font-weight: 700;
         color: darken($red,45%);
     }

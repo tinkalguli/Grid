@@ -1,0 +1,86 @@
+@media screen and (max-width: 768px) {
+
+    html {
+        font-size: 14px;
+    }
+
+    .grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .grid-full {
+        grid-column: 1/-1;
+    }
+
+    /*====  toggle menu  ====*/
+
+    .check-btn {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        z-index: 999;
+        cursor: pointer;
+        .bar {
+            display: block;
+            width: 2rem;
+            height: 3px;
+            border-radius: 1px;
+            background: $red;
+            margin: 3px 0;
+        }
+    }
+
+    .flex-toggle {
+        flex-direction: column;
+    }
+
+    .navbar {
+        display: none;
+        background: #fff;
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        height: 80vh;
+        border-radius: 5px;
+        li {
+            text-align: center;
+            margin: 5vh 0;
+            a {
+                margin: 0;
+                font-weight: 700;
+                color: $red;
+                box-shadow: 5px 5px 10px #aaa;
+                padding: 0.5rem 2rem;
+                border-radius: 1rem;
+            }
+        }
+    }
+
+    #check:checked ~ .navbar {
+        display: block;
+    }
+
+    #check:checked ~ .check-btn > .bar {
+        position: absolute;
+        right: 0;
+    }
+
+    #check:checked ~ .check-btn > .bar-1 {
+        transform: rotate(45deg);
+    }
+
+    #check:checked ~ .check-btn > .bar-2 {
+        display: none;
+    }
+
+    #check:checked ~ .check-btn > .bar-3 {
+        transform: rotate(135deg);
+    }
+}
+
+@media screen and (max-width: 360px) {
+    html {
+        font-size: 12px;
+    }
+}

@@ -63,7 +63,7 @@ table {
 }
 
 html {
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .flex-between {
@@ -81,9 +81,8 @@ html {
 .grid {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(192px, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(192px, 1fr));
-  grid-auto-flow: column;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -112,12 +111,15 @@ img {
   height: 100%;
 }
 
+#highlight {
+  color: #ECAF4E;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
   line-height: 1.5;
   color: #fff;
-  font-size: 14px;
 }
 
 h1 {
@@ -130,7 +132,7 @@ h2 {
 }
 
 h3 {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
 }
 
 a {
@@ -153,12 +155,26 @@ a {
   padding: 1rem 1.8rem;
 }
 
+.navbar .active,
+.navbar a:hover {
+  color: #ECAF4E;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar .active,
+  .navbar a:hover {
+    background: #FC683E;
+    color: #fff;
+  }
+}
+
 .navbar a {
   margin-left: 1.5rem;
 }
 
-#highlight {
-  color: #ECAF4E;
+.check-btn,
+#check {
+  display: none;
 }
 
 .hero-sec {
@@ -294,7 +310,7 @@ a {
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
-  padding-top: 1rem;
+  padding: 1rem 0 0.4rem 0;
 }
 
 .flex li:nth-child(1) {
@@ -310,6 +326,7 @@ a {
 }
 
 .flex time {
+  font-size: 1rem;
   font-weight: 700;
   color: #531301;
 }
@@ -367,4 +384,141 @@ a {
   border: 0;
   border-radius: 1.5rem;
   background: #fff;
+}
+
+.contact-details {
+  background: #161616;
+  color: #aaa;
+}
+
+.contact-details h3 {
+  color: #fff;
+  padding-bottom: 1rem;
+}
+
+.contact-details address {
+  padding-bottom: 2.5rem;
+}
+
+.contact-details li {
+  padding-bottom: 0.5rem;
+}
+
+.contact-details a {
+  color: #aaa;
+  padding-left: 1rem;
+}
+
+.map {
+  max-width: 55rem;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+.footer {
+  text-align: center;
+  color: #aaa;
+  padding: 7rem 0;
+}
+
+.footer a {
+  color: #aaa;
+}
+
+.icon-menu {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 1rem;
+}
+
+.icon-menu li {
+  margin: 0 1rem;
+}
+
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 14px;
+  }
+  .grid {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+  }
+  .grid-full {
+    grid-column: 1/-1;
+  }
+  /*====  toggle menu  ====*/
+  .check-btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: relative;
+    z-index: 999;
+    cursor: pointer;
+  }
+  .check-btn .bar {
+    display: block;
+    width: 2rem;
+    height: 3px;
+    border-radius: 1px;
+    background: #FC683E;
+    margin: 3px 0;
+  }
+  .flex-toggle {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .navbar {
+    display: none;
+    background: #fff;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    height: 80vh;
+    border-radius: 5px;
+  }
+  .navbar li {
+    text-align: center;
+    margin: 5vh 0;
+  }
+  .navbar li a {
+    margin: 0;
+    font-weight: 700;
+    color: #FC683E;
+    -webkit-box-shadow: 5px 5px 10px #aaa;
+            box-shadow: 5px 5px 10px #aaa;
+    padding: 0.5rem 2rem;
+    border-radius: 1rem;
+  }
+  #check:checked ~ .navbar {
+    display: block;
+  }
+  #check:checked ~ .check-btn > .bar {
+    position: absolute;
+    right: 0;
+  }
+  #check:checked ~ .check-btn > .bar-1 {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+  #check:checked ~ .check-btn > .bar-2 {
+    display: none;
+  }
+  #check:checked ~ .check-btn > .bar-3 {
+    -webkit-transform: rotate(135deg);
+            transform: rotate(135deg);
+  }
+}
+
+@media screen and (max-width: 360px) {
+  html {
+    font-size: 12px;
+  }
 }

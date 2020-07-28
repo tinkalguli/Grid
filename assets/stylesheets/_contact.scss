@@ -31,4 +31,29 @@
     }
 }
 
+.contact-details {
+    background: $black;
+    color: $text-color;
+    h3 {
+        color: #fff;
+        padding-bottom: 1rem;
+    }
+    address {
+        padding-bottom: 2.5rem;
+    }
+    li {
+        padding-bottom: 0.5rem;
+    }
+    a {
+        color: $text-color;
+        padding-left: 1rem;
+    }
+}
+
+.map {
+    max-width: 55rem;
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+
 

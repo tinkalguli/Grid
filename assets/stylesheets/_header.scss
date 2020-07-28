@@ -12,11 +12,20 @@
 }
 
 .navbar {
+    .active,
+    a:hover {
+        color: $yellow;
+        @media screen and (max-width: 768px){
+            background: $red;
+            color: #fff;
+        }
+    }
     a {
         margin-left: 1.5rem;
     }
 }
 
-#highlight {
-    color: $yellow;
+.check-btn,
+#check {
+    display: none;
 }
