@@ -1,0 +1,370 @@
+/*====  css reset  ====*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 18px;
+}
+
+.flex-between {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(192px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(192px, 1fr));
+  grid-auto-flow: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.img-font-size {
+  font-size: 0;
+}
+
+.grid-column-2 {
+  grid-column: span 2;
+}
+
+.padding {
+  padding: 2.5rem;
+}
+
+img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+}
+
+.height-100 {
+  height: 100%;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  line-height: 1.5;
+  color: #fff;
+  font-size: 14px;
+}
+
+h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 2.2rem;
+}
+
+h3 {
+  font-size: 1.8rem;
+}
+
+a {
+  text-decoration: none;
+  color: #161616;
+}
+
+.header {
+  position: absolute;
+  width: 100%;
+}
+
+.header .logo {
+  text-shadow: 0 2px 0 #fff;
+}
+
+.header div {
+  max-width: 66rem;
+  margin: 0 auto;
+  padding: 1rem 1.8rem;
+}
+
+.navbar a {
+  margin-left: 1.5rem;
+}
+
+#highlight {
+  color: #ECAF4E;
+}
+
+.hero-sec {
+  background: #fff2ee;
+  color: #aaa;
+}
+
+.hero-img img {
+  height: 100vh;
+}
+
+.hero-text p {
+  padding-bottom: 2.5rem;
+}
+
+.hero-text h2 {
+  color: #161616;
+  padding: 1rem 0;
+}
+
+.hero-text strong {
+  font-weight: 700;
+}
+
+.btn-hero {
+  padding: 0.5rem 2rem;
+  font-weight: 700;
+  border: 0.2rem solid #161616;
+  border-radius: 2rem;
+  display: inline-block;
+}
+
+.about-text {
+  color: #aaa;
+}
+
+.about-text h2 {
+  color: #161616;
+}
+
+.about-text label {
+  padding: 0.2rem 0 1.5rem 0;
+  display: block;
+}
+
+.about-text .first-p {
+  padding-bottom: 1rem;
+}
+
+.my-skills {
+  background: #ECAF4E;
+}
+
+.my-skills label {
+  padding: 1.5rem 0 0.5rem 0;
+  font-weight: 700;
+}
+
+.my-skills label span:nth-child(1) {
+  color: #161616;
+}
+
+.my-skills div {
+  width: 100%;
+  height: 2px;
+}
+
+.my-skills .frontend-bar {
+  background: -webkit-gradient(linear, left top, right top, color-stop(90%, #000), color-stop(90%, #fff));
+  background: linear-gradient(to right, #000 90%, #fff 90%);
+}
+
+.my-skills .backend-bar {
+  background: -webkit-gradient(linear, left top, right top, color-stop(70%, #000), color-stop(70%, #fff));
+  background: linear-gradient(to right, #000 70%, #fff 70%);
+}
+
+.my-skills .html-bar {
+  background: -webkit-gradient(linear, left top, right top, color-stop(80%, #000), color-stop(80%, #fff));
+  background: linear-gradient(to right, #000 80%, #fff 80%);
+}
+
+.project {
+  text-align: center;
+}
+
+.project a {
+  font-size: 3rem;
+  color: #fff;
+}
+
+.project h3 {
+  padding: 1rem 0;
+}
+
+.project-sec div:nth-child(1) {
+  background: #ECAF4E;
+}
+
+.project-sec div:nth-child(2) {
+  background: #FC683E;
+}
+
+.project-sec div:nth-child(3) {
+  background: #161616;
+}
+
+.project-sec div:nth-child(4) {
+  color: #aaa;
+}
+
+.project-sec div:nth-child(4) h3,
+.project-sec div:nth-child(4) a {
+  color: #161616;
+}
+
+.experiece-sec, .education-sec {
+  background: #FC683E;
+}
+
+.experiece-sec label, .education-sec label {
+  margin-left: 3rem;
+}
+
+.experiece-sec p, .education-sec p {
+  padding: 0.5rem 0 1rem 0;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  padding-top: 1rem;
+}
+
+.flex li:nth-child(1) {
+  font-size: 1.5rem;
+}
+
+.flex li:nth-child(2) {
+  padding-left: 1rem;
+}
+
+.flex li:nth-child(3) {
+  padding-left: 0.3rem;
+}
+
+.flex time {
+  font-weight: 700;
+  color: #531301;
+}
+
+.education-sec {
+  background: #ECAF4E;
+}
+
+.education-sec time {
+  color: #4c3208;
+}
+
+.contact-sec {
+  background: #FC683E;
+}
+
+.contact-text p {
+  padding: 0.5rem 0 1.5rem 0;
+}
+
+.form input,
+.form textarea {
+  font-size: 1rem;
+  width: 100%;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid #ECAF4E;
+  padding: 0.5rem;
+  margin: 1rem 0;
+}
+
+.form input::-webkit-input-placeholder,
+.form textarea::-webkit-input-placeholder {
+  color: #fff;
+}
+
+.form input:-ms-input-placeholder,
+.form textarea:-ms-input-placeholder {
+  color: #fff;
+}
+
+.form input::-ms-input-placeholder,
+.form textarea::-ms-input-placeholder {
+  color: #fff;
+}
+
+.form input::placeholder,
+.form textarea::placeholder {
+  color: #fff;
+}
+
+.form .btn-send {
+  padding: 0.8rem 5rem;
+  font-size: 1rem;
+  border: 0;
+  border-radius: 1.5rem;
+  background: #fff;
+}

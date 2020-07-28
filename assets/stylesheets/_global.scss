@@ -1,0 +1,46 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 18px;
+}
+
+.flex-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(192px, 1fr));
+    grid-auto-flow: column;
+    align-items: center;
+}
+
+.img-font-size {
+    font-size: 0;
+}
+
+.grid-column-2 {
+    grid-column: span 2;
+}
+
+.padding {
+    padding: 2.5rem;
+}
+
+img {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+}
+
+.height-100 {
+    height: 100%;
+}

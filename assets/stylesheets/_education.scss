@@ -1,0 +1,7 @@
+.education-sec {
+    @extend .experiece-sec;
+    background: $yellow;
+    time {
+        color: darken($yellow, 45%);
+    }
+}
