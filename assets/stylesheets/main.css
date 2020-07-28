@@ -447,6 +447,9 @@ a {
   .grid-full {
     grid-column: 1/-1;
   }
+  .header {
+    position: static;
+  }
   /*====  toggle menu  ====*/
   .check-btn {
     display: -webkit-box;
@@ -481,8 +484,9 @@ a {
     left: 0;
     top: 0;
     right: 0;
-    height: 80vh;
+    height: 65vh;
     border-radius: 5px;
+    border-radius: 0 0 30px 30px;
   }
   .navbar li {
     text-align: center;
