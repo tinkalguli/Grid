@@ -151,7 +151,7 @@ a {
 }
 
 .header div {
-  max-width: 66rem;
+  max-width: 70rem;
   margin: 0 auto;
   padding: 1rem 1.8rem;
 }
@@ -171,7 +171,6 @@ a {
 
 .navbar a {
   margin-left: 1.5rem;
-  font-weight: 700;
 }
 
 .check-btn,
@@ -494,6 +493,7 @@ a {
             box-shadow: 0 0 30px #aaa;
     padding: 0.8rem 2rem;
     border-radius: 1.3rem;
+    font-weight: 700;
   }
   #check:checked ~ .navbar {
     display: block;
