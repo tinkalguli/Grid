@@ -20,7 +20,7 @@
             <nav class="navbar">
                 <ul class="flex-between flex-toggle">
                     <li><a class="active" href="#home">HOME</a></li>
-                    <li><a href="">ABOUT</a></li>
+                    <li><a href="#about">ABOUT</a></li>
                     <li><a href="">EXPERIENCE</a></li>
                     <li><a href="">TESTIMONIAL</a></li>
                     <li><a href="">CONTACT</a></li>
@@ -31,10 +31,10 @@
 
     <main>
         <section class="grid hero-sec">
-            <div class="hero-img img-font-size grid-column-2">
+            <div class="hero-img img-font-size">
                 <img src="assets/images/home-img.jpg" alt="a guy sitting with a laptop">
             </div>
-            <div class="hero-text padding grid-column-2">
+            <div class="hero-text padding">
                 <label>WELCOME TO MY WEBSITE</label>
                 <h2>Hello, I am <strong>Stimulus</strong> currently based in New York City.</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus temporibus, voluptatem quod, perspiciatis cum alias inventore quam ab id a sapiente numquam?</p>
@@ -42,56 +42,62 @@
             </div>
         </section>
 
-        <section class="grid about-sec">
-            <div class="about-text padding grid-column-2">
+        <section id="about" class="grid about-sec">
+            <div class="about-text padding">
                 <h2>Donec auctor</h2>
                 <label id="highlight">Set valputete vitae dian quis bibendum</label>
                 <p class="first-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde similique facere harum saepe inventore libero dolore vel aspernatur officiis. </p>
                 <p>Fuga natus dolor culpa voluptates, accusantium iusto et odio excepturi mollitia. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
             </div>
-            <div class="about-img img-font-size height-100 grid-full">
-                <img src="assets/images/about-img.jpg" alt="A boy is writting in a notebook">
-            </div>
-            <div class="my-skills padding grid-full">
-                <h2>My Skills</h2>
-                <p>Photoshop. HTML CSS JS. Web Design</p>
-                <label class="flex-between"><span>Frontend Design</span><span>90%</span></label>
-                <div class="frontend-bar"></div>
-                <label class="flex-between"><span>Backend Processing</span><span>70%</span></label>
-                <div class="backend-bar"></div>
-                <label class="flex-between"><span>HTML5 & CSS3</span><span>80%</span></label>
-                <div class="html-bar"></div>
-            </div>
+            <div class="grid my-skills sub-grid height-100">
+                <div class="about-img img-font-size height-100">
+                    <img src="assets/images/about-img.jpg" alt="A boy is writting in a notebook">
+                </div>
+                <div class="my-skills-text padding">
+                    <h2>My Skills</h2>
+                    <p>Photoshop. HTML CSS JS. Web Design</p>
+                    <label class="flex-between"><span>Frontend Design</span><span>90%</span></label>
+                    <div class="frontend-bar"></div>
+                    <label class="flex-between"><span>Backend Processing</span><span>70%</span></label>
+                    <div class="backend-bar"></div>
+                    <label class="flex-between"><span>HTML5 & CSS3</span><span>80%</span></label>
+                    <div class="html-bar"></div>
+                </div>
+            </div>  
         </section>
 
         <section class="project-sec grid">
-            <div class="project padding">
-                <a href="#"><i class="fas fa-desktop"></i></a>
-                <h3>Interface Design</h3>
-                <p>Dignissimos culpa dicta corporis magni voluptatibus consequuntur aut molestiae libero?</p>
+            <div class="grid sub-grid height-100">
+                <div class="project padding project-1">
+                    <a href="#"><i class="fas fa-desktop"></i></a>
+                    <h3>Interface Design</h3>
+                    <p>Dignissimos culpa dicta corporis magni voluptatibus consequuntur aut molestiae libero?</p>
+                </div>
+                <div class="project padding project-2">
+                    <a href="#"><i class="fas fa-paper-plane"></i></a>
+                    <h3>Media Strategy</h3>
+                    <p>Dignissimos culpa dicta corporis magni voluptatibus consequuntur aut molestiae libero?</p>
+                </div>
             </div>
-            <div class="project padding height-100">
-                <a href="#"><i class="fas fa-paper-plane"></i></a>
-                <h3>Media Strategy</h3>
-                <p>Dignissimos culpa dicta corporis magni voluptatibus consequuntur aut molestiae libero?</p>
-            </div>
-            <div class="project padding height-100">
-                <a href="#"><i class="fas fa-th"></i></a>
-                <h3>Mobile App</h3>
-                <p>Dignissimos culpa dicta corporis magni voluptatibus consequuntur aut molestiae libero?</p>
-            </div>
-            <div class="project padding">
-                <a href="#"><i class="fab fa-html5"></i></a>
-                <h3>Coding</h3>
-                <p>Dignissimos culpa dicta corporis magni voluptatibus consequuntur aut molestiae libero?</p>
+            <div class="grid sub-grid height-100">
+                <div class="project padding project-3">
+                    <a href="#"><i class="fas fa-th"></i></a>
+                    <h3>Mobile App</h3>
+                    <p>Dignissimos culpa dicta corporis magni voluptatibus consequuntur aut molestiae libero?</p>
+                </div>
+                <div class="project padding project-4">
+                    <a href="#"><i class="fab fa-html5"></i></a>
+                    <h3>Coding</h3>
+                    <p>Dignissimos culpa dicta corporis magni voluptatibus consequuntur aut molestiae libero?</p>
+                </div>
             </div>
         </section>
 
         <section class="experiece-sec grid">
-            <div class="img-font-size grid-column-2 height-100">
+            <div class="img-font-size height-100">
                 <img src="assets/images/experience-img.jpg" alt="A guy waching his mobile">
             </div>
-            <div class="padding grid-column-2">
+            <div class="padding">
                 <h2>My Experiences</h2>
                 <p>Previous companies and my tasks</p>
                 <ul class="flex">
@@ -110,7 +116,7 @@
         </section>
 
         <section class="education-sec grid">
-            <div class="padding grid-column-2">
+            <div class="padding">
                 <h2>My Education</h2>
                 <p>Previous companies and my tasks</p>
                 <ul class="flex">
@@ -126,14 +132,14 @@
                 </ul>
                 <label>Lorem ipsum dolor sit amet elit.</label>
             </div>
-            <div class="img-font-size grid-column-2 height-100">
+            <div class="img-font-size height-100">
                 <img src="assets/images/education-img.jpg" alt="laptop cup etc. in a table">
             </div>
         </section>
 
         <section class="contact-sec">
             <div class="grid">
-                <div class="contact-text padding grid-column-2">
+                <div class="contact-text padding">
                     <h2>Say Hello...</h2>
                     <p>Lorem ipsum, dolor sit amet adipisicing elit. </p>
                     <form action="#" class="form">
@@ -143,18 +149,20 @@
                         <button class="btn-send">Send</button>
                     </form>
                 </div>
-                <div class="img-font-size height-100 grid-full">
-                    <img src="assets/images/contact-img.jpg" alt="A boy is writting in a notebook">
-                </div>
-                <div class="padding contact-details height-100 grid-full">
-                  <h3>Visit my office</h3>
-                  <address>456 New Street 220000, New York City , USA</address>
-                  <h3>Contact</h3>
-                  <ul>
-                      <li><i class="fas fa-phone-alt"></i><a id="highlight" href="#">101010-10100</a></li>
-                      <li><i class="far fa-envelope"></i><a id="highlight" href="#">example@gmail.com</a></li>
-                      <li><i class="fas fa-globe-asia"></i><a href="#">company.co</a></li>
-                  </ul>
+                <div class="grid sub-grid height-100">
+                    <div class="img-font-size height-100">
+                        <img src="assets/images/contact-img.jpg" alt="A boy is writting in a notebook">
+                    </div>
+                    <div class="padding contact-address height-100">
+                      <h3>Visit my office</h3>
+                      <address>456 New Street 220000, New York City , USA</address>
+                      <h3>Contact</h3>
+                      <ul>
+                          <li><i class="fas fa-phone-alt"></i><a id="highlight" href="#">101010-10100</a></li>
+                          <li><i class="far fa-envelope"></i><a id="highlight" href="#">xyz@gmail.com</a></li>
+                          <li><i class="fas fa-globe-asia"></i><a href="#">company.co</a></li>
+                      </ul>
+                    </div>
                 </div>
             </div>
 

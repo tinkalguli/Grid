@@ -18,16 +18,16 @@ html {
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat( auto-fit, minmax(385px, 1fr) );
     align-items: center;
+}
+
+.sub-grid {
+    grid-template-columns: repeat( auto-fit, minmax(257px, 1fr) );
 }
 
 .img-font-size {
     font-size: 0;
-}
-
-.grid-column-2 {
-    grid-column: span 2;
 }
 
 .padding {

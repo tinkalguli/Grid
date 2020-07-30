@@ -81,19 +81,20 @@ html {
 .grid {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[4];
-      grid-template-columns: repeat(4, 1fr);
+  -ms-grid-columns: (minmax(385px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(385px, 1fr));
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
-.img-font-size {
-  font-size: 0;
+.sub-grid {
+  -ms-grid-columns: (minmax(257px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(257px, 1fr));
 }
 
-.grid-column-2 {
-  grid-column: span 2;
+.img-font-size {
+  font-size: 0;
 }
 
 .padding {
@@ -170,6 +171,7 @@ a {
 
 .navbar a {
   margin-left: 1.5rem;
+  font-weight: 700;
 }
 
 .check-btn,
@@ -182,7 +184,7 @@ a {
   color: #aaa;
 }
 
-.hero-img img {
+.hero-img {
   height: 100vh;
 }
 
@@ -228,31 +230,31 @@ a {
   background: #ECAF4E;
 }
 
-.my-skills label {
+.my-skills-text label {
   padding: 1.5rem 0 0.5rem 0;
   font-weight: 700;
 }
 
-.my-skills label span:nth-child(1) {
+.my-skills-text label span:nth-child(1) {
   color: #161616;
 }
 
-.my-skills div {
+.my-skills-text div {
   width: 100%;
   height: 2px;
 }
 
-.my-skills .frontend-bar {
+.my-skills-text .frontend-bar {
   background: -webkit-gradient(linear, left top, right top, color-stop(90%, #000), color-stop(90%, #fff));
   background: linear-gradient(to right, #000 90%, #fff 90%);
 }
 
-.my-skills .backend-bar {
+.my-skills-text .backend-bar {
   background: -webkit-gradient(linear, left top, right top, color-stop(70%, #000), color-stop(70%, #fff));
   background: linear-gradient(to right, #000 70%, #fff 70%);
 }
 
-.my-skills .html-bar {
+.my-skills-text .html-bar {
   background: -webkit-gradient(linear, left top, right top, color-stop(80%, #000), color-stop(80%, #fff));
   background: linear-gradient(to right, #000 80%, #fff 80%);
 }
@@ -270,24 +272,24 @@ a {
   padding: 1rem 0;
 }
 
-.project-sec div:nth-child(1) {
+.project-1 {
   background: #ECAF4E;
 }
 
-.project-sec div:nth-child(2) {
+.project-2 {
   background: #FC683E;
 }
 
-.project-sec div:nth-child(3) {
+.project-3 {
   background: #161616;
 }
 
-.project-sec div:nth-child(4) {
+.project-4 {
   color: #aaa;
 }
 
-.project-sec div:nth-child(4) h3,
-.project-sec div:nth-child(4) a {
+.project-4 h3,
+.project-4 a {
   color: #161616;
 }
 
@@ -386,25 +388,25 @@ a {
   background: #fff;
 }
 
-.contact-details {
+.contact-address {
   background: #161616;
   color: #aaa;
 }
 
-.contact-details h3 {
+.contact-address h3 {
   color: #fff;
   padding-bottom: 1rem;
 }
 
-.contact-details address {
+.contact-address address {
   padding-bottom: 2.5rem;
 }
 
-.contact-details li {
+.contact-address li {
   padding-bottom: 0.5rem;
 }
 
-.contact-details a {
+.contact-address a {
   color: #aaa;
   padding-left: 1rem;
 }
@@ -440,13 +442,6 @@ a {
   html {
     font-size: 14px;
   }
-  .grid {
-    -ms-grid-columns: (1fr)[1];
-        grid-template-columns: repeat(1, 1fr);
-  }
-  .grid-full {
-    grid-column: 1/-1;
-  }
   .header {
     position: static;
   }
@@ -479,12 +474,12 @@ a {
   }
   .navbar {
     display: none;
-    background: #fff;
+    background: #fffe;
     position: absolute;
     left: 0;
     top: 0;
     right: 0;
-    height: 65vh;
+    height: 70vh;
     border-radius: 5px;
     border-radius: 0 0 30px 30px;
   }
@@ -494,12 +489,11 @@ a {
   }
   .navbar li a {
     margin: 0;
-    font-weight: 700;
     color: #FC683E;
-    -webkit-box-shadow: 5px 5px 10px #aaa;
-            box-shadow: 5px 5px 10px #aaa;
-    padding: 0.5rem 2rem;
-    border-radius: 1rem;
+    -webkit-box-shadow: 0 0 30px #aaa;
+            box-shadow: 0 0 30px #aaa;
+    padding: 0.8rem 2rem;
+    border-radius: 1.3rem;
   }
   #check:checked ~ .navbar {
     display: block;

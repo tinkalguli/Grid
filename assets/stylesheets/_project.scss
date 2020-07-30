@@ -9,21 +9,19 @@
     }
 }
 
-.project-sec {
-    div:nth-child(1){
-        background: $yellow;
-    }
-    div:nth-child(2){
-        background: $red;
-    }
-    div:nth-child(3){
-        background: $black;
-    }
-    div:nth-child(4){
-        color: $text-color;
-        h3,
-        a {
-            color: $black;
-        }
+.project-1 {
+    background: $yellow;
+}
+.project-2 {
+    background: $red;
+}
+.project-3 {
+    background: $black;
+}
+.project-4 {
+    color: $text-color;
+    h3,
+    a {
+        color: $black;
     }
 }
